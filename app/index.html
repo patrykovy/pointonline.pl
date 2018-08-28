@@ -2,66 +2,207 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<link rel="stylesheet" type="text/css" 
-					href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <div class="container">
-			<div class="row">
-				<div class="header span12">
-				</div>
-			</div>
-			<div class="row">
-				<div class="span12">
-				</div>
-			</div>
-    </div>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-    <!--[if lt IE 7]>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&subset=latin-ext">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body data-spy="scroll" data-target="#navbarText" data-offset="100">
+  <nav class="navbar navbar-expand-lg navbar-light" data-animation="animated fadeInUp">
+    <a class="navbar-brand hidden-md-up" href="#home">
+      <img src="/images/small-new-white.png" data-toggle="navbar-logo-white" />
+      <img class="d-none" src="/images/small-new-black.png" data-toggle="navbar-logo-black" />
+    </a>
+    <button class="navbar-toggler border--none" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">O mnie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Usługi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Realizacje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="home" class="skewBox block block__home h-100">
+    <div class="block__home-bg-overlay"></div>
+    <div class="skewBox__content block__home-text-block" data-animation="animated fadeIn">
+      <h1 data-animation="animated fadeInUp" class="text-center">Wznieś swój
+        <span class="border--bottom border--red">wizerunek</span> na szczyt</h1>
+      <p data-animation="animated fadeInUp" class="text-right">z najlepszymi rozwiązaniami IT</p>
+    </div>
+  </section>
+  <section id="about" class="block block__about text-right">
+    <div class="row">
+      <div class="col-12 col-lg-6 image d-none d-lg-block d-xl-block"></div>
+      <div class="col-12 col-lg-6">
+        <h1 data-animation="animated fadeInUp" class="headline">
+          <span class="border--bottom border--red">O mnie</span>
+        </h1>
+        <blockquote class="blockquote" data-animation="animated fadeInUp">
+          <div class="mb-0 blockquote-quote">
+            Większość programistów programuje nie dlatego, że spodziewają się zapłaty lub uwielbienia tłumów, ale dlatego, że programowanie
+            jest dla nich zabawą.
+          </div>
+          <footer class="blockquote-footer">Linus Torvalds</footer>
+        </blockquote>
+        <p class="text-justify" data-animation="animated fadeInUp">
+          Prowadzisz własny biznes i chcesz mieć swoją wizytówkę w sieci? Pomogę Ci ją stworzyć. Razem zbudujmy Twój wyjątkowy wizerunek.
+          W dobie wszechobecnego Internetu nic nie przedstawi Cię klientom lepiej, niż Twoja własna strona www.
+        </p>
+        <p class="text-justify" data-animation="animated fadeInUp">
+          Jestem programistą z kilkuletnim stażem. Moją wiedzę i umiejętności wykorzystam do tego, by pomóc Ci stworzyć atrakcyjne
+          miejsce w sieci, które przyciągnie uwagę i zostanie w pamięci. Skontaktuj się ze mną, przedstaw mi swój pomysł
+          i zrealizujmy go razem.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="block block__services text-center">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3" data-animation="animated fadeInUp">
+        <h1><i class="fas fa-user-tie border--bottom border--red"></i></h1>
+        <p>Pełen profesjonalizm</p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3" data-animation="animated fadeInUp">
+        <h1><i class="fas fa-code border--bottom border--red"></i></h1>
+        <p>Nowoczesne technologie</p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3" data-animation="animated fadeInUp">
+        <h1><i class="fas fa-ambulance border--bottom border--red"></i></h1>
+        <p>Wsparcie techniczne</p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3" data-animation="animated fadeInUp">
+        <h1><i class="fas fa-smile-beam border--bottom border--red"></i></h1>
+        <p>100% zadowolenia</p>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="block block__portfolio">
+    <h1 data-animation="animated fadeInUp" class="headline">
+      <span class="border--bottom border--red">Realizacje</span>
+    </h1>
+    <div class="row block__portfolio-items">
+      <div class="col-6 col-sm-3 col-md-2 block__portfolio-item block__portfolio-item--logo" data-animation="animated fadeInUp">
+          <span class="helper"></span><img src="images/logo-alm.png" alt="ALM Services" />
+      </div>
+      <div class="col-6 col-sm-3 col-md-2 block__portfolio-item block__portfolio-item--text" data-animation="animated fadeInUp">
+        Współpraca przy tworzeniu oprogramowania dla zagranicznego klienta.
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="block block__contact text-right">
+    <div class="row">
+      <div class="col-12 col-lg-8"></div>
+      <div class="col-12 col-lg-4">
+        <h1 data-animation="animated fadeInUp" class="headline">
+          <span class="border--bottom border--red">Kontakt</span>
+        </h1>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center" data-animation="animated fadeInUp">
+            <span></span>
+            "Point" Patryk Ogrodnik
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" data-animation="animated fadeInUp">
+            <span></span>
+            NIP: 6452551718
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" data-animation="animated fadeInUp">
+            <i class="fas fa-map-marker-alt"></i>
+            Metalowa 5/1/10<br/>42-610 Miasteczko Śląskie
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" data-animation="animated fadeInUp">
+            <i class="fas fa-mobile-alt"></i>
+            <a href="tel:+48792209415">+48 792 209 415</a>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center" data-animation="animated fadeInUp">
+            <i class="fas fa-at"></i>
+            <a href="mailto:biuro@pointonline.pl">biuro@pointonline.pl</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="block block__footer">
+    <div class="d-flex justify-content-between align-items-center">
+      <span>pointonline.pl <i class="far fa-copyright fa-sm"></i> 2018</span>
+      <span><img src="/images/small-new-white.png" /></span>
+    </div>
+  </section>
+
+  <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-
-
-
-        <!-- build:js scripts/main.js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/vendor/bootstrap.js -->
-        <script src="bower_components/bootstrap/js/bootstrap-affix.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-alert.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-modal.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-transition.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-button.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-popover.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-carousel.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="bower_components/bootstrap/js/bootstrap-tab.js"></script>
-        <!-- endbuild -->
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+    (function (d, t) {
+      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      g.src = '//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>

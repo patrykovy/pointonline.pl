@@ -25,9 +25,9 @@ module.exports = function (grunt) {
   grunt.initConfig({
     yeoman: yeomanConfig,
     watch: {
-      recess: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
-        tasks: ['recess']
+      sass: {
+        files: ['<%= yeoman.app %>/styles/{,*/}*.scss'],
+        tasks: ['sass']
       },
       livereload: {
         files: [
@@ -113,13 +113,13 @@ module.exports = function (grunt) {
         }
       }
     },
-    recess: {
+    sass: {
+      options: {
+        sourceMap: true
+      },
       dist: {
-        options: {
-          compile: true
-        },
         files: {
-          '<%= yeoman.app %>/styles/main.css': ['<%= yeoman.app %>/styles/main.less']
+          '<%= yeoman.app %>/styles/main.css': ['<%= yeoman.app %>/styles/main.scss']
         }
       }
     },
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
             '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
+            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,xml,json,ico}',
             '<%= yeoman.dist %>/fonts/*'
           ]
         }
@@ -192,15 +192,6 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          /*removeCommentsFromCDATA: true,
-          // https://github.com/yeoman/grunt-usemin/issues/44
-          //collapseWhitespace: true,
-          collapseBooleanAttributes: true,
-          removeAttributeQuotes: true,
-          removeRedundantAttributes: true,
-          useShortDoctype: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true*/
         },
         files: [{
           expand: true,
@@ -221,23 +212,15 @@ module.exports = function (grunt) {
             '*.{ico,txt}',
             'fonts/*',
             '.htaccess',
-            'images/{,*/}*.{webp,gif}'
+            'images/{,*/}*.{webp,gif,xml,json,ico}',
+            'scripts/{,*/}*.js'
           ]
-        }]
-      },
-      server: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>/bower_components/font-awesome/font/',
-          dest: '<%= yeoman.app %>/fonts/',
-          src: ['*']
         }]
       }
     },
     concurrent: {
       dist: [
-        'recess',
+        'sass',
         'imagemin',
         'svgmin',
         'htmlmin'
@@ -254,26 +237,22 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'recess',
-      'copy:server',
+      'sass',
       'livereload-start',
       'connect:livereload',
-      'open',
       'watch'
     ]);
   });
 
   grunt.registerTask('test', [
     'clean:server',
-    'recess',
-    'copy:server',
+    'sass',
     'connect:test',
     'mocha'
   ]);
 
   grunt.registerTask('build', [
     'clean:dist',
-    'copy:server',
     'useminPrepare',
     'concurrent',
     'cssmin',
